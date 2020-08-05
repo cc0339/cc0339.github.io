@@ -20,17 +20,17 @@
     var CONFIG = {"hostname":"emary.xyz","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="cp -i 原文件 目的路径&#x2F;重命名文件例:把hi.log复制到&#x2F;root目录下，并重命名为newhi.logcp -i hi.log &#x2F;root&#x2F;new.hi.log  -i：覆盖目标文件之前给出提示，若用户回复y则确认覆盖 一次性将多个数据复制到同一个目录中去，复制的地方必须是目录例：把家目录下面的&#x2F;u1里面的a1和a2复制到&#x2F;home&#x2F;test下面cp a1 a2 &#x2F;home&#x2F;test">
+  <meta name="description" content="cp -i 原文件 目的路径&#x2F;重命名文件">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux复制文件到某路径并重命名">
 <meta property="og:url" content="http://emary.xyz/2020/08/05/3/index.html">
 <meta property="og:site_name" content="emaryのblog">
-<meta property="og:description" content="cp -i 原文件 目的路径&#x2F;重命名文件例:把hi.log复制到&#x2F;root目录下，并重命名为newhi.logcp -i hi.log &#x2F;root&#x2F;new.hi.log  -i：覆盖目标文件之前给出提示，若用户回复y则确认覆盖 一次性将多个数据复制到同一个目录中去，复制的地方必须是目录例：把家目录下面的&#x2F;u1里面的a1和a2复制到&#x2F;home&#x2F;test下面cp a1 a2 &#x2F;home&#x2F;test">
+<meta property="og:description" content="cp -i 原文件 目的路径&#x2F;重命名文件">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://img2020.cnblogs.com/blog/1851900/202005/1851900-20200513085830172-498050590.png">
 <meta property="og:image" content="https://img2020.cnblogs.com/blog/1851900/202006/1851900-20200601143729471-985570650.png">
 <meta property="article:published_time" content="2020-08-05T02:45:20.000Z">
-<meta property="article:modified_time" content="2020-08-05T06:40:42.725Z">
+<meta property="article:modified_time" content="2020-08-05T07:06:10.983Z">
 <meta property="article:author" content="emary">
 <meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
@@ -195,7 +195,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-08-05 10:45:20 / 修改时间：14:40:42" itemprop="dateCreated datePublished" datetime="2020-08-05T10:45:20+08:00">2020-08-05</time>
+              <time title="创建时间：2020-08-05 10:45:20 / 修改时间：15:06:10" itemprop="dateCreated datePublished" datetime="2020-08-05T10:45:20+08:00">2020-08-05</time>
             </span>
 
           
@@ -209,8 +209,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <a id="more"></a>
-<p>cp -i 原文件 目的路径/重命名文件<br>例:<br>把hi.log复制到/root目录下，并重命名为newhi.log<br>cp -i hi.log /root/new.hi.log<br><img src="https://img2020.cnblogs.com/blog/1851900/202005/1851900-20200513085830172-498050590.png" alt="img"></p>
+        <p>cp -i 原文件 目的路径/重命名文件</p>
+<a id="more"></a>
+
+<p>例:<br>把hi.log复制到/root目录下，并重命名为newhi.log<br>cp -i hi.log /root/new.hi.log<br><img src="https://img2020.cnblogs.com/blog/1851900/202005/1851900-20200513085830172-498050590.png" alt="img"></p>
 <p> -i：覆盖目标文件之前给出提示，若用户回复y则确认覆盖</p>
 <p>一次性将多个数据复制到同一个目录中去，复制的地方必须是目录<br>例：<br>把家目录下面的/u1里面的a1和a2复制到/home/test下面<br>cp a1 a2 /home/test<br><img src="https://img2020.cnblogs.com/blog/1851900/202006/1851900-20200601143729471-985570650.png" alt="img"></p>
 <hr>
@@ -366,10 +368,10 @@
 
         
 
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共807字</span>
+  <span class="post-count">博客全站共808字</span>
 </div>
 <div class="copyright">
   
@@ -381,13 +383,11 @@
   <span class="author" itemprop="copyrightHolder">emary</span>
 <br>
 <div class="powered-by">
-<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
-  本站访客数:<span id="busuanzi_value_site_uv"></span>
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_pv">
+  本站总访问量:<span id="busuanzi_value_site_pv"></span>
 </span>
 </div>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
-  </div>
 
         
 

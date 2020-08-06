@@ -1172,6 +1172,7 @@ pre .javascript .function {
   margin: 0 auto;
   max-width: 120px;
   padding: 2px;
+  border-radius: 50%;
 }
 .site-author-name {
   color: var(--text-color);
@@ -1199,7 +1200,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffde1d;
+  background: #ffd76c;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1363,34 +1364,6 @@ pre .javascript .function {
 }
 .post-toc .nav .active-current > a:hover {
   color: #fc6423;
-}
-.site-state {
-  display: flex;
-  justify-content: center;
-  line-height: 1.4;
-  margin-top: 10px;
-  overflow: hidden;
-  text-align: center;
-  white-space: nowrap;
-}
-.site-state-item {
-  padding: 0 15px;
-}
-.site-state-item:not(:first-child) {
-  border-left: 1px solid #eee;
-}
-.site-state-item a {
-  border-bottom: none;
-}
-.site-state-item-count {
-  display: block;
-  font-size: 1em;
-  font-weight: 600;
-  text-align: center;
-}
-.site-state-item-name {
-  color: #999;
-  font-size: 0.8125em;
 }
 .footer {
   color: #999;
@@ -2001,6 +1974,44 @@ pre .javascript .function {
 #qr p {
   text-align: center;
 }
+.followme {
+  align-items: center;
+  background: var(--card-bg-color);
+  border-left: 3px solid #ff2a2a;
+  color: #bbb;
+  margin: 2em 0 1em 0;
+  padding: 1em 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.followme .social-list {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.followme .social-list .social-item {
+  margin: 0.5em 2em;
+}
+@media (max-width: 991px) {
+  .followme .social-list .social-item {
+    margin: 0.5em 0.75em;
+  }
+}
+.followme .social-list .social-link {
+  border: 0;
+  display: inline-block;
+  text-align: center;
+}
+.followme .social-list .social-link .icon {
+  font-size: 1.75em;
+  height: 1.75em;
+  width: 1.75em;
+}
+.followme .social-list .social-link .label {
+  display: block;
+  font-size: 14px;
+}
 .category-all-page .category-all-title {
   text-align: center;
 }
@@ -2473,10 +2484,6 @@ ul.breadcrumb li + li:last-child {
 }
 .links-of-blogroll-item {
   padding: 0;
-}
-body {
-  background: url("/images/01.jpg");
-  background-attachment: fixed;
 }
 .content-wrap {
   background: initial;

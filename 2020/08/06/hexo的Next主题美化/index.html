@@ -212,9 +212,27 @@
 <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><hr>
 <p>搭建博客的时候用了hexo人气较高的<code>next</code>主题，美化过程中遇到了各种各样的问题，在此记录并且可能会持续更新~</p>
 <h4 id="选择Next的主题样式"><a href="#选择Next的主题样式" class="headerlink" title="选择Next的主题样式"></a>选择Next的主题样式</h4><hr>
-<p>在 <code>\hexo\themes\next\_config.yml</code> 主题配置文件中<a href="Ctrl+F">^查找</a>关键字<code>Schemes</code>，选择自己喜欢的样式。<br>需要的样式去掉前面的#即可。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Schemes</span><br><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br><span class="line">scheme: Gemini</span><br></pre></td></tr></table></figure>
+<p>在 <code>\hexo\themes\next\_config.yml</code> 主题配置文件中查找关键字<code>Schemes</code>，选择自己喜欢的样式。<br>需要的样式去掉前面的#即可。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Schemes</span><br><span class="line">#scheme: Muse   #默认的版本</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br><span class="line">scheme: Gemini</span><br></pre></td></tr></table></figure>
+
+
 <h4 id="代码高亮"><a href="#代码高亮" class="headerlink" title="代码高亮"></a>代码高亮</h4><hr>
+<p>编辑站点配置文件搜索highlight：</p>
+<p>将auto_detece启用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">enable: true</span><br><span class="line">line_number: true</span><br><span class="line">auto_detect: true</span><br><span class="line">tab_replace: &#39;&#39;&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
+
+<p>编辑主题配置文件，搜索highlight_theme</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">codeblock:</span><br><span class="line"> # Code Highlight theme</span><br><span class="line">  # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic</span><br><span class="line">  # See: https://github.com/chriskempson/tomorrow-theme</span><br><span class="line">  highlight_theme: night</span><br></pre></td></tr></table></figure>
+
+<p>Next使用tomorrow-theme作为代码高亮，目前有normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic 种样式可供选择，我这里用的是night。</p>
+<h4 id="添加背景图片"><a href="#添加背景图片" class="headerlink" title="添加背景图片"></a>添加背景图片</h4><hr>
+<blockquote>
+<p>1.将要添加的背景图片放入<code>thems/next/sources/images</code><br>2.打开<code>themes/next/sources/css/_schemes/</code>文件夹，进入你的主题，修改<code>index.styl</code></p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">@import &#x27;../Pisces/_layout&#x27;;</span><br><span class="line">@import &#x27;../Pisces/_header&#x27;;</span><br><span class="line">@import &#x27;../Pisces/_menu&#x27;;</span><br><span class="line">@import &#x27;../Pisces/_sub-menu&#x27;;</span><br><span class="line">@import &#x27;../Pisces/_sidebar&#x27;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">body &#123;</span><br><span class="line"> background:url(/images/01.jpg);</span><br><span class="line">  background-attachment: fixed;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="参考博文，博文推荐"><a href="#参考博文，博文推荐" class="headerlink" title="参考博文，博文推荐"></a>参考博文，博文推荐</h4><hr>
+<p><a target="_blank" rel="noopener" href="http://www.chenlianhan.com/2020/03/20/HEXO-NEXT%E7%95%8C%E9%9D%A2%E7%BE%8E%E5%8C%96%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/">HEXO+NEXT界面美化</a></p>
 
     </div>
 
@@ -305,7 +323,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%89%E6%8B%A9Next%E7%9A%84%E4%B8%BB%E9%A2%98%E6%A0%B7%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">选择Next的主题样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE"><span class="nav-number">3.</span> <span class="nav-text">代码高亮</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%89%E6%8B%A9Next%E7%9A%84%E4%B8%BB%E9%A2%98%E6%A0%B7%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">选择Next的主题样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE"><span class="nav-number">3.</span> <span class="nav-text">代码高亮</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87"><span class="nav-number">4.</span> <span class="nav-text">添加背景图片</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E5%8D%9A%E6%96%87%EF%BC%8C%E5%8D%9A%E6%96%87%E6%8E%A8%E8%8D%90"><span class="nav-number">5.</span> <span class="nav-text">参考博文，博文推荐</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -349,7 +367,7 @@
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共1k字</span>
+  <span class="post-count">博客全站共1.2k字</span>
 </div>
 <div class="copyright">
   
@@ -365,6 +383,44 @@
   本站总访问量:<span id="busuanzi_value_site_pv"></span>
 </span>
 </div>
+
+<span id="sitetime">
+<script language=javascript>
+  function siteTime(){
+    window.setTimeout("siteTime()", 1000);
+    var seconds = 1000;
+    var minutes = seconds * 60;
+    var hours = minutes * 60;
+    var days = hours * 24;
+    var years = days * 365;
+    var today = new Date();
+    var todayYear = today.getFullYear();
+    var todayMonth = today.getMonth()+1;
+    var todayDate = today.getDate();
+    var todayHour = today.getHours();
+    var todayMinute = today.getMinutes();
+    var todaySecond = today.getSeconds();
+    /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+    year - 作为date对象的年份，为4位年份值
+    month - 0-11之间的整数，做为date对象的月份
+    day - 1-31之间的整数，做为date对象的天数
+    hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+    minutes - 0-59之间的整数，做为date对象的分钟数
+    seconds - 0-59之间的整数，做为date对象的秒数
+    microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+    var t1 = Date.UTC(2018,02,13,15,00,00); //北京时间2018-2-13 00:00:00
+    var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+    var diff = t2-t1;
+    var diffYears = Math.floor(diff/years);
+    var diffDays = Math.floor((diff/days)-diffYears*365);
+    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+    document.getElementById("sitetime").innerHTML=" 博客已运行"+/*diffYears+" 年 "+*/diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+  }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+  siteTime();
+</script>
+</span>
 </div>
 
         

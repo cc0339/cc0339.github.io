@@ -193,7 +193,7 @@
               目前共计 2 个标签
             </div>
             <div class="tag-cloud-tags">
-              <a href="/tags/Linux/" style="font-size: 12px; color: #ccc">Linux</a> <a href="/tags/hexo/" style="font-size: 30px; color: #111">hexo</a>
+              <a href="/tags/Linux/" style="font-size: 12px; color: #ccc">Linux</a> <a href="/tags/hexo/" style="font-size: 12px; color: #ccc">hexo</a>
             </div>
           </div>
         
@@ -299,9 +299,7 @@
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <div class="theme-info">
-  <div class="powered-by"></div>
-  <span class="post-count">博客全站共1.2k字</span>
-</div>
+ 
 <div class="copyright">
   
   &copy; 
@@ -311,10 +309,16 @@
   </span>
   <span class="author" itemprop="copyrightHolder">emary</span>
 <br>
-<div class="powered-by">
-<i class="fa fa-user-md"></i><span id="busuanzi_container_site_pv">
-  本站总访问量:<span id="busuanzi_value_site_pv"></span>
-</span>
+
+<div class="site-state-item site-state-posts" style="border-left:none;">
+       <span class="site-state-item-count" id="busuanzi_value_site_pv"></span>
+       <span class="site-state-item-name">浏览量</span>&nbsp;
+       <i class="fa fa-heart-o" aria-hidden="true"></i>&nbsp;
+       <span class="site-state-item-count" id="busuanzi_value_site_uv"></span>
+       <span class="site-state-item-name">访客量</span>&nbsp;
+       <i class="fa fa-heart-o" aria-hidden="true"></i>&nbsp;
+       <span class="post-count">全站共1.4k字</span>
+</div>
 </div>
 
 <span id="sitetime">
@@ -349,7 +353,7 @@
     var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
     var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
     var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-    document.getElementById("sitetime").innerHTML=" 博客已运行"+/*diffYears+" 年 "+*/diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+    document.getElementById("sitetime").innerHTML=" 已运行"+/*diffYears+" 年 "+*/diffDays+" 天 "+diffHours+" 小时 "/*+diffMinutes+" 分钟 "+diffSeconds+" 秒"*/;
   }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
   siteTime();
 </script>
@@ -357,6 +361,26 @@
 </div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 

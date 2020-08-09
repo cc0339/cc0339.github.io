@@ -206,6 +206,13 @@
               </span>
 
           
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
 
         </div>
       </header>
@@ -262,8 +269,8 @@
       <i class="fa fa-chevron-left"></i> Linux移除/删除文件/目录，移除带-开头的文件
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/08/06/%E6%B5%8B%E8%AF%95/" rel="next" title="text">
-      text <i class="fa fa-chevron-right"></i>
+    <a href="/2020/08/06/hexo%E7%9A%84Next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/" rel="next" title="hexo的Next主题美化">
+      hexo的Next主题美化 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -365,9 +372,7 @@
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <div class="theme-info">
-  <div class="powered-by"></div>
-  <span class="post-count">博客全站共1.2k字</span>
-</div>
+ 
 <div class="copyright">
   
   &copy; 
@@ -377,10 +382,16 @@
   </span>
   <span class="author" itemprop="copyrightHolder">emary</span>
 <br>
-<div class="powered-by">
-<i class="fa fa-user-md"></i><span id="busuanzi_container_site_pv">
-  本站总访问量:<span id="busuanzi_value_site_pv"></span>
-</span>
+
+<div class="site-state-item site-state-posts" style="border-left:none;">
+       <span class="site-state-item-count" id="busuanzi_value_site_pv"></span>
+       <span class="site-state-item-name">浏览量</span>&nbsp;
+       <i class="fa fa-heart-o" aria-hidden="true"></i>&nbsp;
+       <span class="site-state-item-count" id="busuanzi_value_site_uv"></span>
+       <span class="site-state-item-name">访客量</span>&nbsp;
+       <i class="fa fa-heart-o" aria-hidden="true"></i>&nbsp;
+       <span class="post-count">全站共1.4k字</span>
+</div>
 </div>
 
 <span id="sitetime">
@@ -415,7 +426,7 @@
     var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
     var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
     var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-    document.getElementById("sitetime").innerHTML=" 博客已运行"+/*diffYears+" 年 "+*/diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+    document.getElementById("sitetime").innerHTML=" 已运行"+/*diffYears+" 年 "+*/diffDays+" 天 "+diffHours+" 小时 "/*+diffMinutes+" 分钟 "+diffSeconds+" 秒"*/;
   }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
   siteTime();
 </script>
@@ -423,6 +434,26 @@
 </div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 

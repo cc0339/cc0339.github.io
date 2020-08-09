@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://emary.xyz/"/>
-  <updated>2020-08-09T04:18:12.377Z</updated>
+  <updated>2020-08-09T08:35:33.000Z</updated>
   <id>http://emary.xyz/</id>
   
   <author>
@@ -15,21 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://emary.xyz/2020/08/09/test/"/>
-    <id>http://emary.xyz/2020/08/09/test/</id>
-    <published>2020-08-09T04:18:12.000Z</published>
-    <updated>2020-08-09T04:18:12.377Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>hexo的Next主题美化</title>
@@ -101,7 +86,7 @@
     <link href="http://emary.xyz/2020/08/03/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://emary.xyz/2020/08/03/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
     <published>2020-08-03T08:33:20.000Z</published>
-    <updated>2020-08-06T08:18:42.882Z</updated>
+    <updated>2020-08-09T08:08:50.508Z</updated>
     
     <content type="html"><![CDATA[<p>总结了一些hexo的平时要用到的命令</p><a id="more"></a><hr><h4 id="部署到服务器"><a href="#部署到服务器" class="headerlink" title="部署到服务器"></a><em>部署到服务器</em></h4><pre><code>hexo cleanhexo generatehexo deploy</code></pre><h4 id="本地调试"><a href="#本地调试" class="headerlink" title="本地调试"></a><em>本地调试</em></h4><pre><code>hexo generate #生成hexo server #启动本地服务，进行文章预览调试</code></pre><h4 id="常用"><a href="#常用" class="headerlink" title="常用"></a><em>常用</em></h4><pre><code>hexo new &quot;postName&quot;           #新建文章hexo new page &quot;pageName&quot;      #新建页面hexo generate                 #生成静态页面至public目录hexo server                   #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）hexo deploy                   #将.deploy目录部署到GitHubhexo help                     # 查看帮助hexo version                  #查看Hexo的版本</code></pre><h4 id="复合命令"><a href="#复合命令" class="headerlink" title="复合命令"></a><em>复合命令</em></h4><pre><code>hexo deploy -g  #生成加部署hexo server -g  #生成加预览</code></pre><h4 id="命令简写"><a href="#命令简写" class="headerlink" title="命令简写"></a>命令简写</h4><pre><code>hexo n == hexo newhexo g == hexo generatehexo s == hexo serverhexo d == hexo deploy</code></pre><hr><p><span style="font-size:15px">参考自<a href="https://www.cnblogs.com/zhcncn/p/4097881.html">https://www.cnblogs.com/zhcncn/p/4097881.html</a></span></p><p><span style="font-size:15px">博客园原文地址<a href="https://www.cnblogs.com/emary/p/13419603.html">https://www.cnblogs.com/emary/p/13419603.html</a></span></p><p><span style="font-size:15px">非转侵删</span></p>]]></content>
     

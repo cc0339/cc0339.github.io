@@ -294,10 +294,7 @@
     <a href="/2020/08/05/Linux%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6%E5%88%B0%E6%9F%90%E8%B7%AF%E5%BE%84%E5%B9%B6%E9%87%8D%E5%91%BD%E5%90%8D/" rel="prev" title="Linux复制文件到某路径并重命名">
       <i class="fa fa-chevron-left"></i> Linux复制文件到某路径并重命名
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/08/09/test/" rel="next" title="test">
-      test <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -453,7 +450,7 @@
     var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
     var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
     var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-    document.getElementById("sitetime").innerHTML=" 已运行"+/*diffYears+" 年 "+*/diffDays+" 天 "+diffHours+" 小时 "/*+diffMinutes+" 分钟 "+diffSeconds+" 秒"*/;
+    document.getElementById("sitetime").innerHTML=" 已运行"+/*diffYears+" 年 "+*/diffDays+" 天 "+diffHours+" 小时 ";/*+diffMinutes+" 分钟 "+diffSeconds+" 秒"*/
   }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
   siteTime();
 </script>
